@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Números</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="mt-4">Generador de Números</h1>
+
+<div class="form-group">
+    <label for="desdeInput">Desde:</label>
+    <input type="number" class="form-control" id="desdeInput" placeholder="Ingrese el valor desde el cual desea generar números aleatorios">
+</div>
+
+<div class="form-group">
+    <label for="hastaInput">Hasta:</label>
+    <input type="number" class="form-control" id="hastaInput" placeholder="Ingrese el valor hasta el cual desea generar números aleatorios">
+</div>
+
+<div class="form-group">
+    <label for="cantidadInput">Cantidad de Números:</label>
+    <input type="number" class="form-control" id="cantidadInput" placeholder="Ingrese la cantidad de números aleatorios que desea generar">
+</div>
+
+<button class="btn btn-success mt-2" onclick="generarNumero()">Generar Número</button>
+<button class="btn btn-danger mt-2" onclick="eliminarNumeros()">Eliminar Números</button>
+
+<table class="table mt-4">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Números Generados</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="numeroCuerpo"></tbody>
+</table>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
